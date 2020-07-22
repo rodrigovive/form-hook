@@ -1,5 +1,9 @@
 {
-  "name": "bombo",
+  "name": "simple-form-user",
+  "homepage": "https://rodrigovive.github.io/simple-form-user/",
+  "description": "Project to register user and list",
+  "author": "Rodrigo Viveros",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
