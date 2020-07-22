@@ -1,14 +1,13 @@
-import React from "react";
-import "./App.css";
-import FormUser from "./components/FormUser";
+import React from 'react';
+import FormUser from './components/FormUser';
 import {
   useSetState,
   getUser,
   initialUser,
   validate,
   isValid,
-} from "./hooks/useSetState";
-import ListUsers from "./components/ListUsers";
+} from './hooks/useSetState';
+import ListUsers from './components/ListUsers';
 
 function App() {
   const [users, setUsers] = React.useState([]);
