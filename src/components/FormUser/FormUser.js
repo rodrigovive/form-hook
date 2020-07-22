@@ -1,10 +1,10 @@
-import React from "react";
-import Textfield from "../Textfield";
-import Button from "../Button";
+import React from 'react';
+import Textfield from '../Textfield';
+import Button from '../Button';
 
 const FormUser = ({ handleSubmit, user, handleChange }) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="w-full" onSubmit={handleSubmit}>
       <Textfield
         type="text"
         name="firstname"

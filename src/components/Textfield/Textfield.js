@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Textfield = ({
   error,
@@ -10,10 +10,13 @@ const Textfield = ({
   name,
 }) => (
   <>
-    <div className="TextField">
-      <label htmlFor={name}>{label}:</label>
+    <div className="w-full mt-2">
+      <label className="text-lg leading-5" htmlFor={name}>
+        {label}:
+      </label>
       <div>
         <input
+          className="w-full mt-1 text-lg form-input"
           value={value}
           id={name}
           name={name}
@@ -21,7 +24,9 @@ const Textfield = ({
           onChange={handleChange}
           type={type}
         />
-        {!!error && <span className="TextField-error">{error}</span>}
+        {!!error && (
+          <span className="block mt-1 text-xs text-red-500">{error}</span>
+        )}
       </div>
     </div>
   </>
